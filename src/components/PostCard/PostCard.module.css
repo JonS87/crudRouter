@@ -1,0 +1,84 @@
+.post-card {
+  margin-bottom: 20px;
+  background-color: white;
+  width: 98%;
+  margin: 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-block {
+  display: flex;
+}
+
+.user-info {
+  display: flex;
+}
+
+.user-name {
+  color: rgb(68, 105, 174);
+  font-weight: 600;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-founder {
+  flex: 1;
+  margin-top: 10px;
+}
+
+.plant-icon {
+  margin-right: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content:space-around;
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  margin-left: 10px;
+  font-size: 24px;
+  width: 97%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.comment-section {
+  margin-top: 5px;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  margin-left: 2px;
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.emoji-buttons {
+  display: flex;
+  margin-left: 10px;
+  position: absolute;
+  right: 15px;
+  font-size: 14px;
+}
