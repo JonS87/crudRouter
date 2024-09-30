@@ -11,7 +11,7 @@ export const EditPost: React.FC = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const response = await fetch(`http://localhost:7070/posts/${id}`);
+      const response = await fetch(`${import.meta.env.VITE_POSTS_URL}/${id}`);
       const data = await response.json();
       setExistingContent(data.post.content);
     };
@@ -20,7 +20,7 @@ export const EditPost: React.FC = () => {
   }, [id]);
 
   const handleSave = async () => {
-    await fetch (`http://localhost:7070/posts/${id}`, {
+    await fetch (`${import.meta.env.VITE_POSTS_URL}/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

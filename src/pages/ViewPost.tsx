@@ -17,7 +17,7 @@ export const ViewPost: React.FC = () => {
       setError(null);
 
       try {
-        const response = await fetch(`http://localhost:7070/posts/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_POSTS_URL}/${id}`);
         if (!response.ok) {
           throw new Error('Ошибка при загрузке поста');
         }
@@ -35,7 +35,7 @@ export const ViewPost: React.FC = () => {
   }, [id]);
 
   const deletePost = async (id: number) => {
-    await fetch(`http://localhost:7070/posts/${id}`, { method: 'DELETE' });
+    await fetch(`${import.meta.env.VITE_POSTS_URL}/${id}`, { method: 'DELETE' });
     navigate('/');
   };
 
